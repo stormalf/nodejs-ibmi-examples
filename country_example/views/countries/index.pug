@@ -1,0 +1,28 @@
+head
+  title Countries
+  meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+  script(src="https://unpkg.com/axios/dist/axios.min.js")
+  script(src="/public/js/deleteCountry.js")
+
+
+body
+
+  a(href="/countries/new")
+    button() New Country
+
+  h1=title
+    table
+      thead
+        tr
+          th ID
+          th Description
+          th 
+          th 
+      tbody
+        each row in results
+          tr
+            td: a(href="/countries/" + row.COUNID)=row.COUNID
+            td= row.COUNDE
+            td: a(href="/countries/" + row.COUNID + "/edit")
+                  button() edit
+            td: button(class="delete-link" id=row.COUNID) delete

@@ -1,0 +1,13 @@
+form(id="country-form" method=formMethod)
+
+  p 
+    label(for="COUNID") ID:
+    if disable
+      input(type="text", id="COUNID", value=result.COUNID, disabled)
+    else
+      input(type="text", id="COUNID", value=result.COUNID, required)
+  p
+    label(for="COUNDE") Description:
+    input(type="text", id="COUNDE", value=result.COUNDE, required)
+  p
+    button(id="form-submit-btn" type="submit") submit
