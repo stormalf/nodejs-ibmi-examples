@@ -26,6 +26,7 @@ This example includes a simple frontend using [pug](https://www.npmjs.com/packag
 4. create your .env file
 
    example of content
+
    HOST=YOUR_IBMi
    USER=your_user
    PASSWORD=your_password
@@ -37,6 +38,7 @@ This example includes a simple frontend using [pug](https://www.npmjs.com/packag
    "start": "env-cmd -f ~/.env node app.js"
 
 6. start the server
+
    `npm start`
 
 7. access http://hostname:port/ (port is 8001 by default, or can be changed with the `PORT` environment variable)
