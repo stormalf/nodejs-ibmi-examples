@@ -20,9 +20,11 @@ This example includes a simple frontend using [pug](https://www.npmjs.com/packag
 
 3. execute the SQL script to create the file (don't forget to change the library name by your own library)
    on the IBM i
+
    `RUNSQLSTM SRCSTMF('/home/stormalf/country.sql') COMMIT(*NONE)`
 
 4. create your .env file
+
    example of content
    HOST=YOUR_IBMi
    USER=your_user
@@ -30,6 +32,7 @@ This example includes a simple frontend using [pug](https://www.npmjs.com/packag
    LIBRARY=your_library
 
 5. change the package.json
+
    replace by the correct path to the .env file or replace by your env file containing the correct values
    "start": "env-cmd -f ~/.env node app.js"
 
