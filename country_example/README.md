@@ -27,9 +27,9 @@ This example includes a simple frontend using [pug](https://www.npmjs.com/packag
 
    example of content
 
-   HOST=YOUR_IBMi
-   USER=your_user
-   PASSWORD=your_password
+   HOST=YOUR_IBMi\
+   USER=your_user\
+   PASSWORD=your_password\
    LIBRARY=your_library
 
 5. change the package.json
